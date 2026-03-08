@@ -34,7 +34,7 @@ void run()
 	}
 }
 
-// worker thread 종료되어도.. thread 객체는 정리가 필요하다 joinable하다고..
+// worker thread 종료되어도.. thread 객체는 정리가 필요하다 joinable`하다고..
 // 마치 zombie process같은 상태.. 즉 os의 추가적인 정리인 join이 필요하다
 
 int main()
