@@ -1,6 +1,6 @@
 # UDP Socket Client
 from socket import *
-serverName = 'hostname'
+serverName = 'kyungddin'
 serverPort = 12000
 
 # UDP 소켓 생성
