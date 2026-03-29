@@ -1,2 +1,7 @@
 # cs_study
-CS 과목 공부하기
+- compiler
+- database
+- docker
+- network
+    - Computer Networking: A Top-Down Approach
+- operating_system
