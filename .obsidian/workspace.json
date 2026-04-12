@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vision/영상처리 초급 이론.md",
+                "file": "network/basic_network_01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "영상처리 초급 이론"
+              "title": "basic_network_01"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "8c55541d8e577094",
   "lastOpenFiles": [
+    "network/topdown_network_01.md",
     "vision/영상처리 초급 이론.md",
     "무제.md",
     "vision",
