@@ -2,20 +2,22 @@
 #include <WinSock2.h>
 #include <WS2tcpip.h> // To Use inet_pton
 #include <string>
-
-#pragma comment(lib, "ws2_32.lib")
-
+#pragma comment(lib, "ws2_32.lib") // Linking Stage
 using namespace std;
 
 int main()
 {   
     // 0. Port And Address Define
-    const char* serverIpAddr = "localhost";
+    const char* serverIpAddr = "127.0.0.1";
 	enum ePort { PORT = 54000 };
 
     // 1. WinSock 동적 라이브러리 활성화(초기화)
-    WSADATA wsaData;
+    // Runtime Stage Init
+    // 리눅스/파이썬은 OS가 네트워크 스택을 항상 열어둠
+    // Windows/C++은 프로세스별로 네트워크 시스템을 초기화해야함?
+    WSADATA wsaData; 
     int iniResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+        
     if (iniResult != 0)
     {
         cerr << "Can't Init WinSock!" << endl;
@@ -23,7 +25,10 @@ int main()
     }
 
     // 2. Client Socket 생성
-    SOCKET ClientSocket = socket(AF_INET, SOCK_STREAM, 0); // 0은 AutoSet
+    // 명시적으로는 세 번째 인자에 TCP/UDP를 넣어줘야 하지만, 두 번째에서
+    // 사실상 결정되므로 0(Auto)로 두는 편..
+    SOCKET ClientSocket = socket(AF_INET, SOCK_STREAM, 0);
+        
     if (ClientSocket == INVALID_SOCKET)
     {
         cerr << "Can't Create Socket" << endl;
@@ -31,12 +36,14 @@ int main()
         return -1;
     }
 
-    // 3. Binding (IP and Port)
+    // 3. IP and Port Setting
     sockaddr_in hint {};
-    hint.sin_family = AF_INET;
-    hint.sin_port = htons(PORT);
-
-    int convResult = inet_pton(AF_INET, serverIpAddr, &hint.sin_addr); // char* IP를 바이트로 변환 후 hint.sin_addr에 저장
+    hint.sin_family = AF_INET; // IPv4
+    hint.sin_port = htons(PORT);    // PORT
+    // char* IP를 바이트로 변환 후 hint.sin_addr에 저장 
+    // 따라서 IP Addr 써야 함..! DNS X
+    int convResult = inet_pton(AF_INET, serverIpAddr, &hint.sin_addr); 
+    
     if (convResult != 1)
     {
         cerr << "Can't Convert IP adderss" << endl;
