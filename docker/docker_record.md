@@ -33,7 +33,7 @@ FROM ubuntu:20.04
 ```
 
 2. 이미지 빌드 중 명령 실행
-```dockerfiule
+```dockerfile
 # RUN은 최대한 합쳐서 레이어를 줄이자!
 RUN bashCMD
 ```
