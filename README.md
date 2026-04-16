@@ -3,7 +3,9 @@
 
 ## Complete
 - Computer Architecture
+
 - Algorithm
+
 - Operating System
 
 
@@ -11,18 +13,20 @@
 - Computer Network
     - Top Down Network
     - Web Frameworks
+
 - Database
-    - MariaDB
-    - Redis
+
 - Docker
     - Docker Compose
     - Docker Build
     - dive analysis
+
 - Build System
     - make
     - cmake
+    - ninja?
 
 
 ## Future Work
 - compiler
-- computer vision
+- computer_vision (maybe?)
