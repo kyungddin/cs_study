@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "04fd3e2de78ac2c5",
+        "id": "ead20bc696478dd1",
         "type": "tabs",
         "children": [
           {
-            "id": "8c55541d8e577094",
+            "id": "8b78cc1dc2009994",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "8c55541d8e577094",
+  "active": "8b78cc1dc2009994",
   "lastOpenFiles": [
+    "LOG.md",
     "network/CPP_HTTP/TCP_Server.exe",
     "network/CPP_HTTP/TCP_Server.obj",
     "network/CPP_HTTP/TCP_Server.cpp",
@@ -191,7 +192,6 @@
     "network/topdown_network.md",
     "network/basic_network_01.md",
     "network/hongong_network.md",
-    "무제.md",
     "network/topdown_network_01.md",
     "vision/영상처리 초급 이론.md",
     "vision",
