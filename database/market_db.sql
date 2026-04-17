@@ -1,3 +1,5 @@
+-- Copyright: 한빛미디어
+
 DROP DATABASE IF EXISTS market_db; -- 만약 market_db가 존재하면 우선 삭제한다.
 CREATE DATABASE market_db;
 

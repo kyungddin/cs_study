@@ -2,7 +2,7 @@
 웹에서 HTML 페이지, CSS 문서, 이미지 등 리소스의 위치를 나타내는 주소
 
 
-## URL의 구조
+# URL의 구조
 - Scheme, Domain Name, Port, Path, Parameter, Anchor로 이루어짐
     - Scheme(=Protocol)
         - ftp나 mailto 같은 프로토콜도 있지만 일반적으로는 http & https

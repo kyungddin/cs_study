@@ -3,7 +3,9 @@
 
 ## Complete
 - Computer Architecture
+
 - Algorithm
+
 - Operating System
 
 
@@ -13,8 +15,11 @@
     - Web Frameworks
 
 - Database
+<<<<<<< HEAD
     - MariaDB
     - Redis
+=======
+>>>>>>> 4d13c4e50405f3e409d243131f4da67990d52489
 
 - Docker
     - Docker Compose
@@ -24,10 +29,11 @@
 - Build System
     - make
     - cmake
+    - ninja?
 
 - markup 
 
 
 ## Future Work
 - compiler
-- computer vision
+- computer_vision (maybe?)
